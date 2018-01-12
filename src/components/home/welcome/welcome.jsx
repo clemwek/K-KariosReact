@@ -1,5 +1,13 @@
 import React from 'react';
 
-const WelcomePage = () => <h1>Hello there welcome.</h1>;
+import Button from 'material-ui/Button';
+
+const WelcomePage = () => {
+return (
+  <Button raised color="primary">
+      Hello World
+    </Button>
+  );
+};
 
 export default WelcomePage;
