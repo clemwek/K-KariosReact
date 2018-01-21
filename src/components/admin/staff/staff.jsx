@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import StaffOrderTable from './staffOrderTable';
+import SalesTable from './pendingSalesTable';
 
 let id = 0;
 
@@ -61,6 +62,14 @@ class StaffPage extends Component {
       <div>
         <h2>Hello there</h2>
         <StaffOrderTable
+          data={data}
+          handleOrder={this.handleOrder}
+          handleChange={this.handleChange}
+          open={this.state.open}
+          handleClose={this.handleClose}
+          handleSubmitOrder={this.handleSubmitOrder}
+        />
+        <SalesTable
           data={data}
           handleOrder={this.handleOrder}
           handleChange={this.handleChange}
